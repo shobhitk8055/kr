@@ -12,6 +12,7 @@
     <!-- Place favicon.ico in the root directory -->
     
     <!-- All css files are included here. -->
+    
     <!-- Bootstrap fremwork main css -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- This core.css file contents all plugings css file. -->
@@ -67,7 +68,7 @@
                                     <div class="header-top ptb-10">
                                         <div class="adresses">
                                             <div class="phone">
-                                                <p>call <span>+91 734 110 0424 </span></p>
+                                                <p>call <span>+91 734 110 0423/24/26 </span></p>
                                             </div>
                                             <div class="email">
                                                 <p>Email: <span>krblessings0074@gmail.com</span></p>
@@ -132,29 +133,25 @@
                                     <!-- <p>There are many vars of passageson't look even slightly believable.</p> -->
                                 </div>
                                 <div class="booking-form">
-                                    <form action="#">
+                                    <form action="mail.php" method="POST">
                                         <div class="b-date arrive mb-15">
-                                            <input class="date-picker" type="text" placeholder="Arrive Date">
+                                            <input class="date-picker" name="arrive_date" type="text" placeholder="Arrive Date">
                                             <i class="mdi mdi-calendar-text"></i>
                                         </div>
                                         <div class="b-date departure mb-15">
-                                            <input class="date-picker" type="text" placeholder="Departure Date">
+                                            <input class="date-picker" name="departure_date" type="text" placeholder="Departure Date">
                                             <i class="mdi mdi-calendar-text"></i>
                                         </div>
                                         <div class="select-book mb-15">
-                                            <select name="book" class="select-booking">
-                                                <option value="" selected>Adult</option>
-                                                <option value="1">Teen</option>
-                                                <option value="1">old</option>
+                                            <select name="guest" class="select-booking">
+                                                <option value="1" selected>1 Guest</option>
+                                                <option value="2"> 2 Guest </option>
+                                                <option value="3"> 3 Guest </option>
                                             </select>
                                         </div>
-                                        <!-- <div class="select-book  mb-30">
-                                            <select name="book" class="select-booking">
-                                                <option value="" selected>Room</option>
-                                                <option value="1">Roome 101</option>
-                                                <option value="1">Roome 102</option>
-                                            </select>
-                                        </div> -->
+                                        <div class="  mb-30">
+                                            <input style="color: white" type="email" name="email" placeholder="Email">
+                                        </div>
                                         <div class="submit-form">
                                             <button type="submit">Check Availability</button>
                                         </div>
@@ -278,7 +275,7 @@
                                             <h3><a href="#">Delux room</a></h3>
                                         </div>
                                         <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
+                                            <h5>₹ 2500 / <span>Night (2 guest)</span></h5>
                                         </div>
                                         <div class="room-book">
                                             <a href="#">Book now</a>
@@ -293,46 +290,10 @@
                                     </div>
                                     <div class="room-desc">
                                         <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
+                                            <h3><a href="#">Executive room</a></h3>
                                         </div>
                                         <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
+                                            <h5>₹ 2500 / <span>Night</span></h5>
                                         </div>
                                         <div class="room-book">
                                             <a href="#">Book now</a>
@@ -347,10 +308,10 @@
                                     </div>
                                     <div class="room-desc">
                                         <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
+                                            <h3><a href="#">Executive room</a></h3>
                                         </div>
                                         <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
+                                            <h5>₹ 3000 / <span>Night(2 guest)</span></h5>
                                         </div>
                                         <div class="room-book">
                                             <a href="#">Book now</a>
@@ -358,60 +319,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>€ 2000 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="single-room">
-                                    <div class="room-img">
-                                        <a href="#"><img src="images/room/room3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="room-desc">
-                                        <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
-                                        </div>
-                                        <div class="room-rent">
-                                            <h5>₹ 2000 / <span>Night</span></h5>
-                                        </div>
-                                        <div class="room-book">
-                                            <a href="#">Book now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -1019,10 +927,10 @@
                                 <img src="images/logo/logo.png" alt="">
                             </div>
                             <div class="f-adress">
-                                <p><span>Address:</span> Dashmesh Nagar, Patiala Road, Sangrur</p>
+                                <p><span>Address:</span> Dashmesh Nagar, Patiala Road bye pass Sangrur, Punjab 148001</p>
                             </div>
                             <div class="hotel-contact">
-                                <p><span>phone:</span> +91 734 110 0424</p>
+                                <p><span>phone:</span> +91 734 110 0423/24/26 </p>
                                 <p><span>Email:</span> krblessings0074@gmail.com</p>
                             </div>
                         </div>
